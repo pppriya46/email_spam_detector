@@ -1,37 +1,32 @@
-# Spam Mail Classification Using Deep Learning
+# Spam Mail Classification 
 ## A Hybrid Multilayer RNN Approach
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 📌 Project Overview
+## Project Overview
 This project implements a deep learning model for binary classification of spam emails using a hybrid architecture combining different types of Recurrent Neural Networks (RNNs) including cuDNNLSTM and cuDNNGRU layers.
 
-## 👥 Team Members
-- **Shakti Ashutosh Panda** (1905804)
-- **Shivaansh Sharma (Diba)** (1905808)
 
-*Under the guidance of Dr. Debajyoty Banik*
-
-## 🎯 Objectives
+## Objectives
 - Build a hybrid deep learning model for spam classification
 - Preprocess and balance email datasets
 - Achieve high accuracy using RNN architecture
 - Optimize model using GPU acceleration (cuDNN)
 
-## 📊 Dataset
+## Dataset
 - **Total Samples:** ~8,284 emails
 - **Classes:** Balanced (50% spam, 50% ham)
 - **Sources:** Kaggle datasets + SpamAssassin corpus
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - Python 3.8+
 - TensorFlow/Keras
 - Google Colab (GPU runtime)
 - Libraries: pandas, numpy, BeautifulSoup, re
 
-## 📁 Project Structure
+##  Project Structure
 ```
 spam-mail-classification/
 │
@@ -43,16 +38,6 @@ spam-mail-classification/
 └── README.md
 ```
 
-## 🚀 Status
-✅ Completed - April 2023
-
----
-
-*KIIT Deemed to be University*  
-*School of Computer Engineering*  
-*Bhubaneswar, Odisha - 751024*
-
-## 🚀 Getting Started
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -101,7 +86,7 @@ pip install -r requirements.txt
    - Analyze confusion matrix
    - Calculate metrics
 
-## 📈 Model Architecture
+## Model Architecture
 
 - **Embedding Layer:** 20,000 vocabulary, 128 dimensions
 - **cuDNNLSTM Layers:** Multiple stacked layers
@@ -111,7 +96,7 @@ pip install -r requirements.txt
 - **Optimizer:** Adam
 - **Loss:** Binary crossentropy
 
-## 📊 Results
+## Results
 
 - **Accuracy:** ~99% on balanced dataset
 - **Precision:** High spam detection rate
@@ -119,30 +104,6 @@ pip install -r requirements.txt
 - **F1-Score:** Excellent overall performance
 
 
-## 🤝 Contributing
-This is an academic project. For major changes, please open an issue first to discuss proposed changes.
 
-## 📝 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍🎓 Academic Context
-- **Institution:** KIIT Deemed to be University
-- **Department:** School of Computer Engineering
-- **Course:** Bachelor's Degree in Computer Science & Engineering
-- **Semester:** 6th Semester (Spring 2023)
-- **Supervisor:** Dr. Debajyoty Banik
 
-## 📚 References
-- Keras Documentation: https://keras.io/
-- TensorFlow Guide: https://www.tensorflow.org/
-- cuDNN Documentation: https://docs.nvidia.com/deeplearning/cudnn/
-
-## 📧 Contact
-- **Shakti Ashutosh Panda:** shakti.panda@example.com
-- **Shivaansh Sharma:** shivaansh.sharma@example.com
-
----
-
-**Note:** Dataset files are not included in the repository due to size constraints. They can be downloaded from Kaggle.
-
-*Last Updated: April 2023*
