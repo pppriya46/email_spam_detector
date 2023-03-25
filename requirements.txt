@@ -1,0 +1,19 @@
+# Deep Learning Framework
+tensorflow==2.11.0
+keras==2.11.0
+
+# Data Processing
+numpy==1.23.5
+pandas==1.5.3
+
+# Text Processing
+beautifulsoup4==4.11.2
+lxml==4.9.2
+
+# Visualization
+matplotlib==3.7.1
+seaborn==0.12.2
+
+# Utilities
+scikit-learn==1.2.2
+regex==2022.10.31
