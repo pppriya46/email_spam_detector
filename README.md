@@ -51,3 +51,70 @@ spam-mail-classification/
 *KIIT Deemed to be University*  
 *School of Computer Engineering*  
 *Bhubaneswar, Odisha - 751024*
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.8 or higher
+- Google Colab (for GPU support) or local GPU with CUDA support
+- Required libraries (see requirements.txt)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/spam-mail-classification.git
+cd spam-mail-classification
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Open notebooks in Google Colab:
+   - Upload notebooks to Google Drive
+   - Open with Google Colab
+   - Change Runtime type to GPU
+
+### Usage
+
+1. **Data Preprocessing:**
+   Run `dataset_spam_mail_classification.ipynb` to:
+   - Load and merge datasets
+   - Clean and preprocess text
+   - Create balanced dataset
+
+2. **Model Training:**
+   Run `spam_mail_classification.ipynb` to:
+   - Build the hybrid RNN model
+   - Train on preprocessed data
+   - Evaluate performance
+
+3. **Benchmarking:**
+   Run `benchmark_spam_mail_classification.ipynb` to:
+   - Test model on new data
+   - Generate predictions
+
+4. **Evaluation:**
+   Run `confusion_matrix_benchmark.ipynb` to:
+   - Analyze confusion matrix
+   - Calculate metrics
+
+## 📈 Model Architecture
+
+- **Embedding Layer:** 20,000 vocabulary, 128 dimensions
+- **cuDNNLSTM Layers:** Multiple stacked layers
+- **cuDNNGRU Layers:** Hybrid architecture
+- **Dropout:** Regularization (0.2-0.5)
+- **Dense Output:** Sigmoid activation for binary classification
+- **Optimizer:** Adam
+- **Loss:** Binary crossentropy
+
+## 📊 Results
+
+- **Accuracy:** ~99% on balanced dataset
+- **Precision:** High spam detection rate
+- **Recall:** Minimal false negatives
+- **F1-Score:** Excellent overall performance
+
