@@ -118,3 +118,31 @@ pip install -r requirements.txt
 - **Recall:** Minimal false negatives
 - **F1-Score:** Excellent overall performance
 
+
+## 🤝 Contributing
+This is an academic project. For major changes, please open an issue first to discuss proposed changes.
+
+## 📝 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍🎓 Academic Context
+- **Institution:** KIIT Deemed to be University
+- **Department:** School of Computer Engineering
+- **Course:** Bachelor's Degree in Computer Science & Engineering
+- **Semester:** 6th Semester (Spring 2023)
+- **Supervisor:** Dr. Debajyoty Banik
+
+## 📚 References
+- Keras Documentation: https://keras.io/
+- TensorFlow Guide: https://www.tensorflow.org/
+- cuDNN Documentation: https://docs.nvidia.com/deeplearning/cudnn/
+
+## 📧 Contact
+- **Shakti Ashutosh Panda:** shakti.panda@example.com
+- **Shivaansh Sharma:** shivaansh.sharma@example.com
+
+---
+
+**Note:** Dataset files are not included in the repository due to size constraints. They can be downloaded from Kaggle.
+
+*Last Updated: April 2023*
