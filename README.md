@@ -44,7 +44,7 @@ spam-mail-classification/
 ```
 
 ## 🚀 Status
-🔨 In Development - March 2023
+✅ Completed - April 2023
 
 ---
 
