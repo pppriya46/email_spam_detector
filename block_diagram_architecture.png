@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Classification Flow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .box {
+            background: white;
+            border: 2px solid #2c3e50;
+            border-radius: 8px;
+            padding: 18px 25px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #2c3e50;
+            text-align: center;
+            min-width: 150px;
+        }
+
+        .box.data { background: #e8f5e9; border-color: #4caf50; }
+        .box.preprocess { background: #e3f2fd; border-color: #2196f3; }
+        .box.encode { background: #f3e5f5; border-color: #9c27b0; }
+        .box.model { background: #fff3e0; border-color: #ff9800; }
+        .box.eval { background: #ffebee; border-color: #f44336; }
+
+        .arrow {
+            font-size: 24px;
+            color: #7f8c8d;
+        }
+
+        .arrow-down {
+            font-size: 24px;
+            color: #7f8c8d;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Spam Mail Classification Pipeline</h1>
+        
+        <div class="flowchart">
+            <!-- Data Collection -->
+            <div class="box data">Data Collection</div>
+            <div class="arrow-down">↓</div>
+            
+            <!-- Preprocessing Row 1 -->
+            <div class="row">
+                <div class="box preprocess">Remove HTML</div>
+                <div class="arrow">→</div>
+                <div class="box preprocess">Remove URLs</div>
+                <div class="arrow">→</div>
+                <div class="box preprocess">Remove Punctuation</div>
+                <div class="arrow">→</div>
+                <div class="box preprocess">Remove Stopwords</div>
+            </div>
+            <div class="arrow-down">↓</div>
+            
+            <!-- Data Balancing -->
+            <div class="box data">Balance Dataset (50-50)</div>
+            <div class="arrow-down">↓</div>
+            
+            <!-- Encoding Row -->
+            <div class="row">
+                <div class="box encode">Tokenization</div>
+                <div class="arrow">→</div>
+                <div class="box encode">Sequencing</div>
+                <div class="arrow">→</div>
+                <div class="box encode">Padding/Truncating</div>
+            </div>
+            <div class="arrow-down">↓</div>
+            
+            <!-- Train-Test Split -->
+            <div class="box encode">Train-Test Split</div>
+            <div class="arrow-down">↓</div>
+            
+            <!-- Model Architecture -->
+            <div class="row">
+                <div class="box model">Input</div>
+                <div class="arrow">→</div>
+                <div class="box model">Embedding</div>
+                <div class="arrow">→</div>
+                <div class="box model">cuDNN LSTM</div>
+                <div class="arrow">→</div>
+                <div class="box model">Dropout</div>
+                <div class="arrow">→</div>
+                <div class="box model">cuDNN GRU</div>
+                <div class="arrow">→</div>
+                <div class="box model">cuDNN LSTM</div>
+                <div class="arrow">→</div>
+                <div class="box model">Sigmoid</div>
+            </div>
+            <div class="arrow-down">↓</div>
+            
+            <!-- Training -->
+            <div class="box model">Training (GPU)</div>
+            <div class="arrow-down">↓</div>
+            
+            <!-- Evaluation Row -->
+            <div class="row">
+                <div class="box eval">Metrics</div>
+                <div class="arrow">→</div>
+                <div class="box eval">Confusion Matrix</div>
+                <div class="arrow">→</div>
+                <div class="box eval">Benchmarking</div>
+                <div class="arrow">→</div>
+                <div class="box eval">Testing</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
